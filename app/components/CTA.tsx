@@ -19,7 +19,7 @@ export default function CTA() {
                 discuss how we can bring your vision to life.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="mailto:info@tafora.in" className="btn-gradient text-base">
+                <a href="mailto:infor.tafora@gmail.com" className="btn-gradient text-base">
                   Get In Touch
                 </a>
                 <a href="#projects" className="btn-outline text-base">

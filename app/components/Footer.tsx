@@ -46,18 +46,18 @@ export default function Footer() {
             <h4 className="font-semibold text-sm mb-4">Contact</h4>
             <div className="flex flex-col gap-3 text-sm text-muted">
               <a
-                href="mailto:info@tafora.in"
+                href="mailto:infor.tafora@gmail.com"
                 className="hover:text-foreground transition-colors"
               >
-                info@tafora.in
+                infor.tafora@gmail.com
               </a>
-              <a
-                href="tel:+919497887767"
-                className="hover:text-foreground transition-colors"
-              >
-                +91 9497 887 767
-              </a>
-              <p>Malappuram, Kerala, India</p>
+              <p className="leading-relaxed">
+                House No. 1121, 5/A (5th Floor),
+                <br />
+                Road No. 11, Avenue 8/A,
+                <br />
+                Mirpur DOHS, Dhaka 1216, Bangladesh
+              </p>
             </div>
 
             {/* Social */}

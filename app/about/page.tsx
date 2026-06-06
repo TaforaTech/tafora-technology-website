@@ -410,7 +410,7 @@ export default function AboutPage() {
                     creating products that work, grow, and last.
                   </p>
                   <Link
-                    href="mailto:info@tafora.in"
+                    href="mailto:infor.tafora@gmail.com"
                     className="btn-gradient text-base"
                   >
                     Get In Touch
