@@ -2,17 +2,19 @@
 
 import AnimateOnScroll from "./AnimateOnScroll";
 
+const waveDurations = [1.17, 1.02, 1.15, 1.38, 1.39, 1.13, 1.12, 1.35, 1.40, 1.31, 1.32, 1.26, 1.28, 1.44, 1.30, 1.15, 1.37, 1.39, 1.36, 1.42];
+
 function WaveVisualizer() {
   return (
     <div className="flex items-center justify-center gap-1 h-20">
-      {Array.from({ length: 20 }).map((_, i) => (
+      {waveDurations.map((duration, i) => (
         <div
           key={i}
           className="w-1 rounded-full bg-gradient-to-t from-accent-blue to-accent-cyan wave-bar"
           style={{
             height: "100%",
             animationDelay: `${i * 0.08}s`,
-            animationDuration: `${1 + Math.random() * 0.5}s`,
+            animationDuration: `${duration}s`,
           }}
         />
       ))}
