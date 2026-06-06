@@ -1,4 +1,5 @@
 import AnimateOnScroll from "./AnimateOnScroll";
+import CalendlyButton from "./CalendlyButton";
 
 export default function CTA() {
   return (
@@ -19,9 +20,7 @@ export default function CTA() {
                 discuss how we can bring your vision to life.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="mailto:infor.tafora@gmail.com" className="btn-gradient text-base">
-                  Get In Touch
-                </a>
+                <CalendlyButton />
                 <a href="#projects" className="btn-outline text-base">
                   View Our Work
                 </a>

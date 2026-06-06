@@ -1,5 +1,7 @@
 "use client";
 
+import CalendlyButton from "./CalendlyButton";
+
 export default function Hero() {
   return (
     <section
@@ -58,9 +60,7 @@ export default function Hero() {
 
         {/* CTAs */}
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 animate-hero-reveal-3">
-          <a href="#contact" className="btn-gradient text-base">
-            Get in Touch
-          </a>
+          <CalendlyButton />
           <a href="#services" className="btn-outline text-base">
             Our Services
           </a>

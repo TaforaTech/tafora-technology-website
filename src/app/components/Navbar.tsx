@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import CalendlyButton from "./CalendlyButton";
 
 const navLinks = [
   { label: "Services", href: "/services" },
@@ -43,9 +44,7 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Link href="/#contact" className="btn-gradient text-sm !py-2 !px-6">
-            Get in Touch
-          </Link>
+          <CalendlyButton className="btn-gradient text-sm !py-2 !px-6" />
         </div>
 
         {/* Mobile menu button */}
@@ -91,13 +90,7 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Link
-            href="/#contact"
-            onClick={() => setMobileOpen(false)}
-            className="btn-gradient text-sm text-center !py-2"
-          >
-            Get in Touch
-          </Link>
+          <CalendlyButton className="btn-gradient text-sm text-center !py-2" />
         </div>
       </div>
     </nav>

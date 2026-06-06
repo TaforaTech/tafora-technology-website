@@ -7,7 +7,8 @@
       "Bash(cd C:/d/tafora/tafora-landing-page && npm run build 2>&1 | tail -30)",
       "Bash(cd C:/d/tafora/tafora-landing-page && mv app/projects app/case-study)",
       "Bash(cd C:/d/tafora/tafora-landing-page && cp -r app/projects app/case-study && rm -rf app/projects)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "Bash(cd C:/d/tafora/tafora-landing-page && mkdir -p src && cp -r app src/app && rm -rf app)"
     ]
   }
 }

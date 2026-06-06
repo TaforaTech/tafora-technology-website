@@ -3,6 +3,7 @@ import Link from "next/link";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import AnimateOnScroll from "../../components/AnimateOnScroll";
+import CalendlyButton from "../../components/CalendlyButton";
 import { projects, getProjectBySlug } from "../data";
 
 export function generateStaticParams() {
@@ -258,12 +259,7 @@ export default async function ProjectDetailPage({
                     Have a project in mind? Let&apos;s talk about how we can
                     bring your vision to life.
                   </p>
-                  <Link
-                    href="mailto:infor.tafora@gmail.com"
-                    className="btn-gradient text-base"
-                  >
-                    Get In Touch
-                  </Link>
+                  <CalendlyButton />
                 </div>
               </div>
             </AnimateOnScroll>

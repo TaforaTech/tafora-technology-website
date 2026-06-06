@@ -3,6 +3,7 @@ import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import AnimateOnScroll from "../components/AnimateOnScroll";
+import CalendlyButton from "../components/CalendlyButton";
 
 export const metadata: Metadata = {
   title: "Services | Tafora Technology",
@@ -273,12 +274,7 @@ export default function ServicesPage() {
                     We don&apos;t just talk ideas — we build them. Join us in
                     creating products that work, grow, and last.
                   </p>
-                  <Link
-                    href="mailto:infor.tafora@gmail.com"
-                    className="btn-gradient text-base"
-                  >
-                    Get In Touch
-                  </Link>
+                  <CalendlyButton />
                 </div>
               </div>
             </AnimateOnScroll>
