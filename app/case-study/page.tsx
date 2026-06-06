@@ -75,7 +75,7 @@ export default function ProjectsPage() {
                   delay={Math.min((i % 3) + 1, 3)}
                 >
                   <Link
-                    href={`/projects/${project.slug}`}
+                    href={`/case-study/${project.slug}`}
                     className="group block h-full"
                   >
                     <div className="h-full rounded-2xl border border-card-border bg-card-bg/50 overflow-hidden transition-all duration-500 hover:border-accent-cyan/30 hover:-translate-y-1">

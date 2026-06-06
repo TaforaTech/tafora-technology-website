@@ -34,7 +34,7 @@ export default function Projects() {
       <div className="max-w-7xl mx-auto px-6">
         <AnimateOnScroll className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold">
-            Featured <span className="gradient-text">Projects</span>
+            Featured <span className="gradient-text">Case Studies</span>
           </h2>
           <p className="mt-4 text-muted max-w-2xl mx-auto">
             Real-world solutions that drive measurable impact for our clients
@@ -44,12 +44,14 @@ export default function Projects() {
         <div className="grid md:grid-cols-3 gap-6">
           {projects.map((project, i) => (
             <AnimateOnScroll key={project.title} delay={i + 1}>
-              <Link href={`/projects/${project.slug}`} className="group block h-full">
-                <div className="h-full rounded-2xl border border-card-border bg-card-bg/50 overflow-hidden transition-all duration-500 hover:border-accent-cyan/30 hover:-translate-y-1">
+              <Link href={`/case-study/${project.slug}`} className="group block h-full">
+                <div className="h-full rounded-2xl border border-card-border bg-card-bg/50 overflow-hidden card-hover-lift card-inner-glow">
                   <div
-                    className={`h-48 bg-gradient-to-br ${project.gradient} opacity-80 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center`}
+                    className={`h-48 bg-gradient-to-br ${project.gradient} opacity-80 group-hover:opacity-100 transition-all duration-700 flex items-center justify-center relative overflow-hidden`}
                   >
-                    <div className="text-white/90 text-2xl font-bold">
+                    {/* Shimmer overlay on hover */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000" />
+                    <div className="text-white/90 text-2xl font-bold relative z-10">
                       {project.title}
                     </div>
                   </div>
@@ -58,7 +60,7 @@ export default function Projects() {
                     <span className="inline-block px-3 py-1 rounded-full text-xs border border-card-border text-muted mb-3">
                       {project.category}
                     </span>
-                    <h3 className="text-lg font-semibold mb-2">{project.title}</h3>
+                    <h3 className="text-lg font-semibold mb-2 group-hover:text-white transition-colors duration-300">{project.title}</h3>
                     <p className="text-muted text-sm leading-relaxed">
                       {project.description}
                     </p>
@@ -70,8 +72,8 @@ export default function Projects() {
         </div>
 
         <AnimateOnScroll className="text-center mt-12">
-          <Link href="/projects" className="btn-outline text-sm">
-            View All Projects
+          <Link href="/case-study" className="btn-outline text-sm">
+            View All Case Studies
           </Link>
         </AnimateOnScroll>
       </div>

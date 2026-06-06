@@ -53,22 +53,22 @@ export default function Solutions() {
         <div className="grid md:grid-cols-3 gap-6">
           {solutions.map((solution, i) => (
             <AnimateOnScroll key={solution.title} delay={i + 1}>
-              <div className="group relative h-full rounded-2xl border border-card-border bg-card-bg/50 p-8 transition-all duration-500 hover:border-accent-cyan/30 hover:bg-card-bg">
+              <div className="group relative h-full rounded-2xl border border-card-border bg-card-bg/50 p-8 card-hover-lift card-inner-glow">
                 {/* Hover glow */}
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-accent-blue/5 to-accent-cyan/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                 <div className="relative z-10">
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-accent-blue/10 to-accent-cyan/10 border border-accent-blue/20 flex items-center justify-center text-accent-cyan mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-accent-blue/10 to-accent-cyan/10 border border-accent-blue/20 flex items-center justify-center text-accent-cyan mb-6 group-hover:scale-110 group-hover:border-accent-cyan/40 transition-all duration-500 cubic-bezier(0.16, 1, 0.3, 1)">
                     {solution.icon}
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">{solution.title}</h3>
+                  <h3 className="text-xl font-semibold mb-2 group-hover:text-white transition-colors duration-300">{solution.title}</h3>
                   <p className="text-sm text-accent-cyan mb-3">{solution.subtitle}</p>
                   <p className="text-muted text-sm leading-relaxed">
                     {solution.description}
                   </p>
-                  <div className="mt-6 flex items-center gap-2 text-sm text-accent-cyan opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="mt-6 flex items-center gap-2 text-sm text-accent-cyan translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-400">
                     <span>Learn more</span>
-                    <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                    <svg className="w-4 h-4 group-hover:translate-x-1.5 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                       <path d="M5 12h14M12 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </div>

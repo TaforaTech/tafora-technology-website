@@ -46,7 +46,7 @@ export default async function ProjectDetailPage({
             <div className="animate-fade-in-up mb-8">
               <div className="flex items-center gap-2 text-sm text-muted">
                 <Link
-                  href="/projects"
+                  href="/case-study"
                   className="hover:text-foreground transition-colors"
                 >
                   Projects
