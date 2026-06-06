@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <h1 className="text-4xl font-bold">Tafora Technology</h1>
-      <p className="text-2xl font-bold">Coming Soon . . .</p>
+      <p className="text-xl font-bold">Coming Very Soon . . .</p>
     </div>
   );
 }
