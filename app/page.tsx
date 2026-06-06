@@ -1,8 +1,27 @@
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Solutions from "./components/Solutions";
+import VoiceAI from "./components/VoiceAI";
+import Projects from "./components/Projects";
+import Clients from "./components/Clients";
+import Testimonials from "./components/Testimonials";
+import CTA from "./components/CTA";
+import Footer from "./components/Footer";
+
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <h1 className="text-4xl font-bold">Tafora Technology</h1>
-      <p className="text-xl font-bold">Coming Very Soon . . .</p>
-    </div>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <Solutions />
+        <VoiceAI />
+        <Projects />
+        <Clients />
+        <Testimonials />
+        <CTA />
+      </main>
+      <Footer />
+    </>
   );
 }
