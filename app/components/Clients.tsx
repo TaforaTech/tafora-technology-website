@@ -1,14 +1,14 @@
 import AnimateOnScroll from "./AnimateOnScroll";
 
 const clients = [
-  "Rail Rolls",
-  "Uslot AI",
-  "Paadha",
-  "Silvermount",
-  "Skillmount",
-  "Al Abrar",
-  "Techmine",
-  "Golgenie",
+  "Khabar Express",
+  "Pathshala AI",
+  "Shastho Seba",
+  "CargoBee",
+  "Nagad Hisab",
+  "LearnBridge",
+  "Shopna Mart",
+  "GreenPulse",
 ];
 
 export default function Clients() {

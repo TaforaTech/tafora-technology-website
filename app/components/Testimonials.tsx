@@ -3,21 +3,21 @@ import AnimateOnScroll from "./AnimateOnScroll";
 const testimonials = [
   {
     quote:
-      "Tafora transformed our ordering system completely. Queue times dropped by 70% and customer satisfaction soared. Their team truly understood our vision.",
-    author: "Rail Rolls",
-    role: "CEO, Food Tech Platform",
+      "Tafora transformed our cloud kitchen operations completely. Delivery times dropped by 40% and vendor onboarding became seamless. Their team truly understood our vision.",
+    author: "Khabar Express",
+    role: "Founder, Cloud Kitchen Marketplace",
   },
   {
     quote:
-      "The AI-powered assessment platform they built exceeded all expectations. The app performance is stellar and the UX is incredibly intuitive.",
-    author: "Uslot AI",
-    role: "Director, Education Platform",
+      "The AI learning platform they built exceeded all expectations. Student engagement tripled and the adaptive tutoring in Bangla was a game-changer for rural students.",
+    author: "Pathshala AI",
+    role: "Director, EdTech Platform",
   },
   {
     quote:
-      "Two years of partnership and counting. Tafora consistently delivers high-quality solutions and has become an integral part of our tech strategy.",
-    author: "Skillmount",
-    role: "Director, EdTech Company",
+      "Two years of partnership and counting. Tafora consistently delivers high-quality solutions and has become an integral part of our logistics tech strategy.",
+    author: "CargoBee",
+    role: "COO, Freight Management",
   },
 ];
 

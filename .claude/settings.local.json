@@ -3,7 +3,8 @@
     "allow": [
       "Bash(cd C:/d/tafora/tafora-landing-page && npm run build 2>&1 | tail -40)",
       "Bash(cd C:/d/tafora/tafora-landing-page && npm run build 2>&1 | tail -25)",
-      "Bash(cd C:/d/tafora/tafora-landing-page && npm run build 2>&1 | tail -20)"
+      "Bash(cd C:/d/tafora/tafora-landing-page && npm run build 2>&1 | tail -20)",
+      "Bash(cd C:/d/tafora/tafora-landing-page && npm run build 2>&1 | tail -30)"
     ]
   }
 }
