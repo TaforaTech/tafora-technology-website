@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(cd C:/d/tafora/tafora-landing-page && npm run build 2>&1 | tail -40)"
+      "Bash(cd C:/d/tafora/tafora-landing-page && npm run build 2>&1 | tail -40)",
+      "Bash(cd C:/d/tafora/tafora-landing-page && npm run build 2>&1 | tail -25)"
     ]
   }
 }

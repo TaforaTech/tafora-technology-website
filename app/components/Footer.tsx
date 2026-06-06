@@ -1,3 +1,13 @@
+import Link from "next/link";
+
+const quickLinks = [
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/#services" },
+  { label: "Projects", href: "/#projects" },
+  { label: "Contact", href: "/#contact" },
+];
+
 export default function Footer() {
   return (
     <footer className="border-t border-card-border bg-card-bg/30">
@@ -19,14 +29,14 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-sm mb-4">Quick Links</h4>
             <div className="flex flex-col gap-2">
-              {["Home", "About", "Services", "Projects", "Contact"].map((link) => (
-                <a
-                  key={link}
-                  href={`#${link.toLowerCase()}`}
+              {quickLinks.map((link) => (
+                <Link
+                  key={link.label}
+                  href={link.href}
                   className="text-sm text-muted hover:text-foreground transition-colors"
                 >
-                  {link}
-                </a>
+                  {link.label}
+                </Link>
               ))}
             </div>
           </div>

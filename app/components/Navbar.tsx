@@ -1,12 +1,13 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About Us", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Projects", href: "#projects" },
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "/about" },
+  { label: "Services", href: "/#services" },
+  { label: "Projects", href: "/#projects" },
 ];
 
 export default function Navbar() {
@@ -28,25 +29,25 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#home" className="text-xl font-bold tracking-tight">
+        <Link href="/" className="text-xl font-bold tracking-tight">
           <span className="gradient-text">Tafora</span>
           <span className="text-foreground/70 font-light ml-1">Technology</span>
-        </a>
+        </Link>
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <a
-              key={link.href}
+            <Link
+              key={link.label}
               href={link.href}
               className="text-sm text-muted hover:text-foreground transition-colors duration-200"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
-          <a href="#contact" className="btn-gradient text-sm !py-2 !px-6">
+          <Link href="/#contact" className="btn-gradient text-sm !py-2 !px-6">
             Get in Touch
-          </a>
+          </Link>
         </div>
 
         {/* Mobile menu button */}
@@ -83,22 +84,22 @@ export default function Navbar() {
       >
         <div className="px-6 py-4 bg-[#050508]/95 backdrop-blur-xl border-b border-card-border flex flex-col gap-4">
           {navLinks.map((link) => (
-            <a
-              key={link.href}
+            <Link
+              key={link.label}
               href={link.href}
               onClick={() => setMobileOpen(false)}
               className="text-muted hover:text-foreground transition-colors"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
-          <a
-            href="#contact"
+          <Link
+            href="/#contact"
             onClick={() => setMobileOpen(false)}
             className="btn-gradient text-sm text-center !py-2"
           >
             Get in Touch
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
