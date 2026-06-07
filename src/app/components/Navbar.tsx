@@ -24,8 +24,8 @@ export default function Navbar() {
     <nav
       className="fixed top-0 left-0 right-0 z-50"
     >
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link href="/" className="text-xl font-bold tracking-tight">
+      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <Link href="/" className="text-3xl font-bold tracking-tight">
           <span className="gradient-text">Tafora</span>
           <span className="text-foreground/70 font-light ml-1">Technology</span>
         </Link>
