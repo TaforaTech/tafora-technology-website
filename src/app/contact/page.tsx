@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import AnimateOnScroll from "../components/AnimateOnScroll";
@@ -147,6 +148,76 @@ export default function ContactPage() {
                 </AnimateOnScroll>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* ── Our Location Section ── */}
+        <section className="relative py-16 md:py-24 bg-[#0b0b1a]">
+          <div className="max-w-7xl mx-auto px-6">
+            <AnimateOnScroll>
+              <div className="text-center mb-12 md:mb-16">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-tight">
+                  Our Location
+                </h2>
+                <p className="mt-4 text-base md:text-lg text-gray-400 max-w-2xl mx-auto">
+                  Visit us at our office in Dhaka, Bangladesh
+                </p>
+              </div>
+            </AnimateOnScroll>
+
+            {/* Location Card */}
+            <AnimateOnScroll delay={1}>
+              <div className="flex justify-center mb-12 md:mb-16">
+                <a
+                  href="https://maps.google.com/?q=Dhaka+Bangladesh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex flex-col sm:flex-row items-center gap-5 sm:gap-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-6 sm:p-8 transition-all duration-500 hover:border-accent-cyan/30 hover:bg-white/[0.08] max-w-xl w-full"
+                >
+                  <div className="flex-shrink-0 w-24 h-24 sm:w-28 sm:h-28 rounded-2xl overflow-hidden border-2 border-white/10 group-hover:border-accent-cyan/30 transition-colors duration-300">
+                    <Image
+                      src="https://images.unsplash.com/photo-1617364852223-e9c4ad9f1e1c?w=300&h=300&fit=crop&q=80"
+                      alt="Dhaka, Bangladesh"
+                      width={112}
+                      height={112}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      unoptimized
+                    />
+                  </div>
+                  <div className="text-center sm:text-left">
+                    <h3 className="text-lg font-semibold text-white mb-1.5 group-hover:text-accent-cyan transition-colors duration-300">
+                      Dhaka, Bangladesh
+                    </h3>
+                    <p className="text-sm text-gray-400 leading-relaxed">
+                      House:1121, 5/A (5th Floor), Road:11, Avenue: 8/A, Mirpur DOHS, Dhaka-1216, Bangladesh
+                    </p>
+                    <span className="inline-flex items-center gap-1.5 mt-3 text-xs font-medium text-accent-cyan uppercase tracking-wider">
+                      View on Map
+                      <svg className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                        <path d="M17 8l4 4m0 0l-4 4m4-4H3" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </span>
+                  </div>
+                </a>
+              </div>
+            </AnimateOnScroll>
+
+            {/* Google Maps Embed */}
+            <AnimateOnScroll delay={2}>
+              <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-black/20">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.2!2d90.3667!3d23.8359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c14c8682a473%3A0xa6c74743d52ddb05!2sMirpur%20DOHS%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1700000000000"
+                  width="100%"
+                  height="450"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Tafora Technology Office - Mirpur DOHS, Dhaka"
+                  className="w-full"
+                />
+              </div>
+            </AnimateOnScroll>
           </div>
         </section>
       </main>
