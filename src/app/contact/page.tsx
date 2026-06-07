@@ -162,11 +162,14 @@ export default function ContactPage() {
                 <p className="mt-4 text-base md:text-lg text-gray-400 max-w-2xl mx-auto">
                   Visit us at our office in Dhaka, Bangladesh
                 </p>
+                <p className="text-sm text-gray-400 leading-relaxed">
+                      House:1121, 5/A (5th Floor), Road:11, Avenue: 8/A, Mirpur DOHS, Dhaka-1216, Bangladesh
+                </p>
               </div>
             </AnimateOnScroll>
 
             {/* Location Card */}
-            <AnimateOnScroll delay={1}>
+            {/* <AnimateOnScroll delay={1}>
               <div className="flex justify-center mb-12 md:mb-16">
                 <a
                   href="https://maps.google.com/?q=Dhaka+Bangladesh"
@@ -200,7 +203,7 @@ export default function ContactPage() {
                   </div>
                 </a>
               </div>
-            </AnimateOnScroll>
+            </AnimateOnScroll> */}
 
             {/* Google Maps Embed */}
             <AnimateOnScroll delay={2}>
