@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 const contactInfo = [
   {
     label: "Email Us",
-    value: "hello@tafora.tech",
-    href: "mailto:hello@tafora.tech",
+    value: "infor.tafora@gmail.com",
+    href: "mailto:infor.tafora@gmail.com",
     description: "We typically respond within 24 hours",
     icon: (
       <svg
@@ -34,9 +34,9 @@ const contactInfo = [
   },
   {
     label: "Call Us",
-    value: "+880 1234-567890",
-    href: "tel:+8801234567890",
-    description: "Sun – Thu, 10 AM – 7 PM (BST)",
+    value: "+880 1328181186",
+    href: "tel:+8801328181186",
+    description: "Sun – Thu, 09 AM – 07 PM (BST)",
     icon: (
       <svg
         viewBox="0 0 24 24"
@@ -55,7 +55,7 @@ const contactInfo = [
   },
   {
     label: "Visit Us",
-    value: "Dhaka, Bangladesh",
+    value: "House:1121, Road:11, Av.: 8, Mirpur DOHS, Dhaka-1216.",
     href: "https://maps.google.com/?q=Dhaka+Bangladesh",
     description: "Our headquarters in the heart of Dhaka",
     icon: (
@@ -86,29 +86,6 @@ export default function ContactPage() {
     <>
       <Navbar />
       <main>
-        {/* ── Hero ── */}
-        {/* <section className="relative pt-32 pb-20 md:pt-44 md:pb-28 overflow-hidden">
-          <div className="absolute inset-0 grid-bg" />
-          <div className="absolute inset-0 radial-glow-top" />
-          <div className="absolute top-1/3 left-1/4 w-[500px] h-[500px] radial-glow-blue opacity-25" />
-          <div className="absolute bottom-1/4 right-1/3 w-[400px] h-[400px] radial-glow-blue opacity-15" />
-
-          <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-            <p className="text-sm text-accent-cyan tracking-widest uppercase mb-6">
-              Contact
-            </p>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.15] tracking-tight">
-              Get in <span className="gradient-text">Touch</span>
-            </h1>
-            <p className="mt-6 text-lg md:text-xl text-muted max-w-2xl mx-auto leading-relaxed">
-              Have a project in mind? Let&apos;s talk about how we can bring
-              your vision to life with intelligent, scalable technology.
-            </p>
-          </div>
-
-          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent" />
-        </section> */}
-
         {/* ── Contact Section ── */}
         <section className="relative py-16 md:py-32">
           <div className="max-w-7xl mx-auto px-6">
