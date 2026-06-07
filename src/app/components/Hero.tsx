@@ -27,14 +27,14 @@ export default function Hero() {
 
         {/* Subline */}
         <p className="mt-6 text-lg md:text-xl text-muted max-w-2xl mx-auto animate-hero-reveal-2">
-        A product manager and AI-powered engineering team built for speed. From idea to real users, in just 3 weeks.
+    AI-powered product manager and engineering team built for speed. <br />From idea to real users, in just 3 weeks.
         </p>
 
         {/* CTAs */}
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 animate-hero-reveal-3">
           <CalendlyButton />
           <a href="#services" className="btn-outline text-base">
-            Our Services
+            See Our Process
           </a>
         </div>
 
