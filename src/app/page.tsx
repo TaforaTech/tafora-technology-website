@@ -15,7 +15,7 @@ export default function Home() {
       <main>
         <Hero />
         <Solutions />
-        <VoiceAI />
+        {/* <VoiceAI /> */}
         <Projects />
         <Clients />
         <Testimonials />
