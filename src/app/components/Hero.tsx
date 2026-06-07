@@ -8,33 +8,6 @@ export default function Hero() {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background layers */}
-      <div className="absolute inset-0 grid-bg" />
-      <div className="absolute inset-0 radial-glow-top" />
-      <div className="absolute inset-0 noise-overlay" />
-
-      {/* Morphing gradient blob */}
-      <div
-        className="absolute top-1/4 left-1/2 w-[700px] h-[500px] animate-morph-glow opacity-25"
-        style={{
-          background: "radial-gradient(ellipse at center, rgba(66,133,236,0.12) 0%, rgba(11,186,251,0.05) 40%, transparent 70%)",
-        }}
-      />
-
-      {/* Secondary ambient glow */}
-      <div
-        className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full opacity-15 animate-float-slow"
-        style={{
-          background: "radial-gradient(circle, rgba(11,186,251,0.08) 0%, transparent 70%)",
-        }}
-      />
-
-      {/* Floating particles */}
-      <div className="absolute top-20 left-[10%] w-1.5 h-1.5 rounded-full bg-accent-cyan/40 animate-float" />
-      <div className="absolute top-32 right-[12%] w-2 h-2 rounded-full bg-accent-blue/25 animate-float" style={{ animationDelay: "1.5s" }} />
-      <div className="absolute bottom-44 left-[18%] w-1 h-1 rounded-full bg-accent-cyan/30 animate-float" style={{ animationDelay: "3s" }} />
-      <div className="absolute top-1/2 right-[8%] w-1.5 h-1.5 rounded-full bg-accent-blue/20 animate-float" style={{ animationDelay: "4.5s" }} />
-      <div className="absolute bottom-60 right-[25%] w-1 h-1 rounded-full bg-accent-cyan/25 animate-float-slow" style={{ animationDelay: "2s" }} />
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center pt-20">
         {/* Badge */}
@@ -84,8 +57,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-white via-white/60 to-transparent" />
     </section>
   );
 }
