@@ -14,21 +14,20 @@ export default function Hero() {
         <div className="animate-hero-reveal">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-card-border bg-card-bg/50 backdrop-blur-sm mb-8 border-breathe">
             <span className="w-2 h-2 rounded-full bg-accent-cyan animate-pulse" />
-            <span className="text-xs text-muted tracking-wide">Building the Future with AI</span>
+            <span className="text-xs text-muted tracking-wide">Build faster with Agentic Engineering</span>
           </div>
         </div>
 
         {/* Headline */}
-        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight tracking-tight animate-hero-reveal-1">
-          Build Intelligent Software
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight animate-hero-reveal-1">
+        We Launch Your MVP in 3 Weeks
           <br />
-          <span className="gradient-text animate-text-clip inline-block">for a Smarter Future</span>
+          <span className="gradient-text animate-text-clip inline-block">Validate with Real Users</span>
         </h1>
 
         {/* Subline */}
         <p className="mt-6 text-lg md:text-xl text-muted max-w-2xl mx-auto animate-hero-reveal-2">
-          We design and develop AI-powered applications that help businesses scale
-          efficiently, automate workflows, and deliver exceptional experiences.
+        A product manager and AI-powered engineering team built for speed. From idea to real users, in just 3 weeks.
         </p>
 
         {/* CTAs */}
