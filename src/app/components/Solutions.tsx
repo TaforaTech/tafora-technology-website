@@ -61,7 +61,7 @@ export default function Solutions() {
                   <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-accent-blue/10 to-accent-cyan/10 border border-accent-blue/20 flex items-center justify-center text-accent-cyan mb-6 group-hover:scale-110 group-hover:border-accent-cyan/40 transition-all duration-500 cubic-bezier(0.16, 1, 0.3, 1)">
                     {solution.icon}
                   </div>
-                  <h3 className="text-xl font-semibold mb-2 group-hover:text-white transition-colors duration-300">{solution.title}</h3>
+                  <h3 className="text-xl font-semibold mb-2 group-hover:text-accent-blue transition-colors duration-300">{solution.title}</h3>
                   <p className="text-sm text-accent-cyan mb-3">{solution.subtitle}</p>
                   <p className="text-muted text-sm leading-relaxed">
                     {solution.description}

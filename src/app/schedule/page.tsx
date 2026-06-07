@@ -33,7 +33,7 @@ export default function SchedulePage() {
   return (
     <main
       className="fixed inset-0 flex flex-col"
-      style={{ background: "#050508" }}
+      style={{ background: "#ffffff" }}
     >
       <div ref={containerRef} className="flex-1 min-h-0 w-full" />
     </main>

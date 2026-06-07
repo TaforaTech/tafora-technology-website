@@ -17,7 +17,7 @@ export default function Hero() {
       <div
         className="absolute top-1/4 left-1/2 w-[700px] h-[500px] animate-morph-glow opacity-25"
         style={{
-          background: "radial-gradient(ellipse at center, rgba(66,133,236,0.3) 0%, rgba(11,186,251,0.1) 40%, transparent 70%)",
+          background: "radial-gradient(ellipse at center, rgba(66,133,236,0.12) 0%, rgba(11,186,251,0.05) 40%, transparent 70%)",
         }}
       />
 
@@ -25,7 +25,7 @@ export default function Hero() {
       <div
         className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full opacity-15 animate-float-slow"
         style={{
-          background: "radial-gradient(circle, rgba(11,186,251,0.2) 0%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(11,186,251,0.08) 0%, transparent 70%)",
         }}
       />
 
@@ -85,7 +85,7 @@ export default function Hero() {
       </div>
 
       {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#050508] via-[#050508]/60 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-white via-white/60 to-transparent" />
     </section>
   );
 }

@@ -42,7 +42,7 @@ export default function ProjectsPage() {
             </p>
           </div>
 
-          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#050508] to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent" />
         </section>
 
         {/* ── Filter Tabs ── */}
@@ -98,7 +98,7 @@ export default function ProjectsPage() {
                         <span className="inline-block px-3 py-1 rounded-full text-[11px] border border-card-border/60 text-accent-cyan/70 mb-3 uppercase tracking-wider">
                           {project.category}
                         </span>
-                        <h3 className="text-lg font-semibold mb-2 group-hover:text-white transition-colors duration-300">
+                        <h3 className="text-lg font-semibold mb-2 group-hover:text-accent-blue transition-colors duration-300">
                           {project.title}
                         </h3>
                         <p className="text-muted text-sm leading-relaxed line-clamp-2">

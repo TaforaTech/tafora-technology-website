@@ -62,7 +62,7 @@ export default function VoiceAI() {
 
             <AnimateOnScroll variant="from-right" delay={2}>
               <div className="relative">
-                <div className="rounded-2xl border border-card-border bg-[#0a0a10] p-8 animate-pulse-glow card-inner-glow">
+                <div className="rounded-2xl border border-card-border bg-white p-8 animate-pulse-glow card-inner-glow">
                   <div className="flex items-center gap-3 mb-6">
                     <div className="w-3 h-3 rounded-full bg-accent-cyan animate-pulse" />
                     <span className="text-sm text-muted">AI Voice Active</span>

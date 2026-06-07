@@ -185,7 +185,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#050508] to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent" />
         </section>
 
         {/* ── Values Grid ── */}
@@ -360,7 +360,7 @@ export default function AboutPage() {
               {capabilities.map((cap, i) => (
                 <AnimateOnScroll key={cap.title} delay={Math.min(i + 1, 4)}>
                   <div className="group h-full rounded-2xl border border-card-border bg-card-bg/50 p-7 transition-all duration-500 hover:border-accent-cyan/30 hover:bg-card-bg">
-                    <h3 className="font-semibold text-lg mb-4 group-hover:text-white transition-colors duration-300">
+                    <h3 className="font-semibold text-lg mb-4 group-hover:text-accent-blue transition-colors duration-300">
                       {cap.title}
                     </h3>
                     <ul className="space-y-3">

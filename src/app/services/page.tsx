@@ -152,7 +152,7 @@ export default function ServicesPage() {
             </p>
           </div>
 
-          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#050508] to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent" />
         </section>
 
         {/* ── Services Grid ── */}
@@ -168,7 +168,7 @@ export default function ServicesPage() {
                     </div>
 
                     {/* Content */}
-                    <h3 className="text-xl font-semibold mb-3 group-hover:text-white transition-colors duration-300">
+                    <h3 className="text-xl font-semibold mb-3 group-hover:text-accent-blue transition-colors duration-300">
                       {service.title}
                     </h3>
                     <p className="text-muted text-sm leading-relaxed mb-6">

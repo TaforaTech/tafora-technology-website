@@ -60,7 +60,7 @@ export default function Projects() {
                     <span className="inline-block px-3 py-1 rounded-full text-xs border border-card-border text-muted mb-3">
                       {project.category}
                     </span>
-                    <h3 className="text-lg font-semibold mb-2 group-hover:text-white transition-colors duration-300">{project.title}</h3>
+                    <h3 className="text-lg font-semibold mb-2 group-hover:text-accent-blue transition-colors duration-300">{project.title}</h3>
                     <p className="text-muted text-sm leading-relaxed">
                       {project.description}
                     </p>

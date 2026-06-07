@@ -7,6 +7,7 @@ import CalendlyButton from "./CalendlyButton";
 const navLinks = [
   { label: "Services", href: "/services" },
   { label: "Case Study", href: "/case-study" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
@@ -23,7 +24,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#050508]/80 backdrop-blur-xl border-b border-card-border"
+          ? "bg-white/80 backdrop-blur-xl border-b border-card-border shadow-sm"
           : "bg-transparent"
       }`}
     >
@@ -79,7 +80,7 @@ export default function Navbar() {
           mobileOpen ? "max-h-80" : "max-h-0"
         }`}
       >
-        <div className="px-6 py-4 bg-[#050508]/95 backdrop-blur-xl border-b border-card-border flex flex-col gap-4">
+        <div className="px-6 py-4 bg-white/95 backdrop-blur-xl border-b border-card-border flex flex-col gap-4">
           {navLinks.map((link) => (
             <Link
               key={link.label}
