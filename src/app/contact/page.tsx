@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const contactInfo = [
   {
     label: "Email Us",
-    value: "infor.tafora@gmail.com",
+    value: "info.tafora@gmail.com",
     href: "mailto:infor.tafora@gmail.com",
     description: "We typically respond within 24 hours",
     icon: (
@@ -55,7 +55,7 @@ const contactInfo = [
   },
   {
     label: "Visit Us",
-    value: "House:1121, Road:11, Av.: 8, Mirpur DOHS, Dhaka-1216.",
+    value: "House:1121, 5/A (5th Floor), Road:11, Avenue: 8/A, Mirpur DOHS, Dhaka-1216, Bangladesh",
     href: "https://maps.google.com/?q=Dhaka+Bangladesh",
     description: "Our headquarters in the heart of Dhaka",
     icon: (
