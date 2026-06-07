@@ -10,7 +10,8 @@
       "Bash(npm run:*)",
       "Bash(cd C:/d/tafora/tafora-landing-page && mkdir -p src && cp -r app src/app && rm -rf app)",
       "WebFetch(domain:calendly.com)",
-      "WebFetch(domain:vivasoftltd.com)"
+      "WebFetch(domain:vivasoftltd.com)",
+      "WebFetch(domain:brainstation-23.com)"
     ]
   }
 }

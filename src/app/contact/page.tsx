@@ -87,7 +87,7 @@ export default function ContactPage() {
       <Navbar />
       <main>
         {/* ── Hero ── */}
-        <section className="relative pt-32 pb-20 md:pt-44 md:pb-28 overflow-hidden">
+        {/* <section className="relative pt-32 pb-20 md:pt-44 md:pb-28 overflow-hidden">
           <div className="absolute inset-0 grid-bg" />
           <div className="absolute inset-0 radial-glow-top" />
           <div className="absolute top-1/3 left-1/4 w-[500px] h-[500px] radial-glow-blue opacity-25" />
@@ -107,25 +107,25 @@ export default function ContactPage() {
           </div>
 
           <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent" />
-        </section>
+        </section> */}
 
         {/* ── Contact Section ── */}
-        <section className="relative py-16 md:py-24">
+        <section className="relative py-16 md:py-32">
           <div className="max-w-7xl mx-auto px-6">
             <div className="grid lg:grid-cols-5 gap-12 lg:gap-16">
               {/* Left — Contact Info */}
               <div className="lg:col-span-2 space-y-6">
-                <AnimateOnScroll>
-                  <h2 className="text-2xl font-bold mb-2">
-                    Let&apos;s start a{" "}
-                    <span className="gradient-text">conversation</span>
-                  </h2>
-                  <p className="text-muted text-sm leading-relaxed mb-8">
-                    Whether you&apos;re a startup with a bold idea or an
-                    enterprise ready to modernize — we&apos;re here to help.
-                    Reach out through any channel below.
+                <div className="relative z-10 max-w-4xl mx-auto text-left">
+                  <p className="text-sm text-accent-cyan tracking-widest uppercase mb-6">
+                    Contact Us
                   </p>
-                </AnimateOnScroll>
+                  <h1 className="text-4xl sm:text-5xl md:text-4xl font-bold leading-[1.15] tracking-tight">
+                    How Can We Help You Make Business <span className="gradient-text">Better</span>?
+                  </h1>
+                  <p className="mt-6 text-lg md:text-xl text-muted max-w-2xl mx-auto leading-relaxed">
+                    Have a project in mind? Let&apos;s collaborate to transform your vision into powerful, intelligent, and scalable technology solutions.
+                  </p>
+                </div>
 
                 {contactInfo.map((info, i) => (
                   <AnimateOnScroll key={info.label} delay={Math.min(i + 1, 3)}>
@@ -159,7 +159,7 @@ export default function ContactPage() {
                 <AnimateOnScroll delay={1}>
                   <div className="rounded-2xl border border-card-border bg-card-bg/50 p-8 md:p-10">
                     <h3 className="text-xl font-semibold mb-1">
-                      Send us a message
+                    Start a conversation with our experts
                     </h3>
                     <p className="text-muted text-sm mb-8">
                       Fill out the form and our team will get back to you
